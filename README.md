@@ -8,4 +8,4 @@ Very basic redirect program
 
 ## How to use
 
-Simply run the docker image `ghcr.io/gleich/redirect`. The environment variable `REDIRECT_URL` is set to the URL it should redirect to and `REDIRECT_STATUS_CODE` is the status code it should redirect with (defaults to status code of 307).
+Simply run the docker image `ghcr.io/gleich/redirect`. The environment variable `REDIRECT_URL` should be set to the URL it should redirect to and `REDIRECT_STATUS_CODE` should be set to the status code it should redirect with (defaults to status code of 307).
