@@ -1,7 +1,7 @@
 # redirect
 
 [![build](https://github.com/gleich/redirect/actions/workflows/build.yml/badge.svg)](https://github.com/gleich/redirect/actions/workflows/build.yml)
-[![deploy](https://github.com/gleich/redirect/actions/workflows/deploy.yml/badge.svg)](https://github.com/gleich/redirect/actions/workflows/deploy.yml)
+[![release](https://github.com/gleich/redirect/actions/workflows/release.yml/badge.svg)](https://github.com/gleich/redirect/actions/workflows/release.yml)
 [![lint](https://github.com/gleich/redirect/actions/workflows/lint.yml/badge.svg)](https://github.com/gleich/redirect/actions/workflows/lint.yml)
 
 Very basic redirect program
