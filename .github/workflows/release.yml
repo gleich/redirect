@@ -1,0 +1,16 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  caprover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u gleich --password-stdin
+          docker build -t ghcr.io/gleich/redirect .
+          docker push ghcr.io/gleich/redirect
