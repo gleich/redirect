@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/caarlos0/env/v11"
-	"github.com/gleich/lumber/v2"
+	"github.com/gleich/lumber/v3"
 )
 
 type config struct {
@@ -22,7 +22,7 @@ func main() {
 		"/",
 		func(w http.ResponseWriter, r *http.Request) {
 			http.Redirect(w, r, *conf.URL, *conf.CODE)
-			lumber.Success("Redirected", r.RequestURI, "to", *conf.URL)
+			lumber.Done("Redirected", r.RequestURI, "to", *conf.URL)
 		},
 	)
 
